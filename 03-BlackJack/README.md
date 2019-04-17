@@ -26,5 +26,5 @@
 
 > 아래 이미지는 프로그램 구현 전 원활한 TDD 진행을 위해 프로그램 구조를 설계한 것으로 실제 구현과는 차이가 있습니다.
 
-![설계초안](https://github.com/sogoagain/TIL/blob/master/TDD/03-BlackJack/BlackJack-draft.jpeg)
+![설계초안](https://github.com/sogoagain/TDD-exercises/blob/master/03-BlackJack/BlackJack-draft.jpeg)
 
