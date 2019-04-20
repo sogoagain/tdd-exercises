@@ -1,4 +1,4 @@
-package Lotto.controller;
+package Lotto.model;
 
 import Lotto.view.WinningObserver;
 

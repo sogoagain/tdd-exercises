@@ -42,4 +42,10 @@ public class Ticket {
     public int hashCode() {
         return Objects.hash(balls);
     }
+
+    @Override
+    public String toString() {
+        return "" +
+                balls;
+    }
 }

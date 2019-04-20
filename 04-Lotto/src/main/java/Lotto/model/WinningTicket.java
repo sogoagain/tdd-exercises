@@ -38,4 +38,11 @@ public class WinningTicket {
     public int hashCode() {
         return Objects.hash(ticket, bonus);
     }
+
+    @Override
+    public String toString() {
+        return ticket +
+                ", 보너스: "
+                + bonus;
+    }
 }

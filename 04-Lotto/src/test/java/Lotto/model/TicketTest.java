@@ -1,7 +1,5 @@
 package Lotto.model;
 
-import Lotto.model.Ball;
-import Lotto.model.Ticket;
 import org.junit.Before;
 import org.junit.Test;
 

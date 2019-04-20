@@ -3,15 +3,17 @@ package Lotto.model;
 import java.util.Arrays;
 
 public enum Rank {
-    FIRST(6)
-    , SECOND(5)
-    , THIRD(5)
-    , FOURTH(4)
-    , FIFTH(3);
+    FIRST("1등", 6)
+    , SECOND("2등", 5)
+    , THIRD("3등", 5)
+    , FOURTH("4등", 4)
+    , FIFTH("5등", 3);
 
+    private String title;
     private int matchCount;
 
-    Rank(int matchCount) {
+    Rank(String title, int matchCount) {
+        this.title = title;
         this.matchCount = matchCount;
     }
 
@@ -24,5 +26,10 @@ public enum Rank {
                 .filter(rank -> rank.matchCount == matchCount)
                 .findFirst()
                 .orElse(null);
+    }
+
+    @Override
+    public String toString() {
+        return this.title;
     }
 }

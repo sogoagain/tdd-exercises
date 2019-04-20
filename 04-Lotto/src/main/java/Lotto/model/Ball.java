@@ -59,8 +59,6 @@ public class Ball implements Comparable<Ball> {
 
     @Override
     public String toString() {
-        return "Ball{" +
-                value +
-                '}';
+        return "" + value;
     }
 }

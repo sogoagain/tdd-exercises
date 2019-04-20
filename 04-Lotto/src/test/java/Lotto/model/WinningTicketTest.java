@@ -1,9 +1,5 @@
 package Lotto.model;
 
-import Lotto.model.Ball;
-import Lotto.model.Rank;
-import Lotto.model.Ticket;
-import Lotto.model.WinningTicket;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -77,6 +73,12 @@ public class WinningTicketTest {
     public void test_win5th() throws Exception {
         Rank rank = getRank(maximumValue, minimumValue + 3);
         assertThat(rank).isEqualByComparingTo(Rank.FIFTH);
+    }
+
+    @Test
+    public void test_notWin() throws Exception {
+        Rank rank = getRank(maximumValue, minimumValue + Ticket.SIZE);
+        assertThat(rank).isNull();
     }
 
     private Ticket createTicketWithIncreasingBy1(int minimum) {
