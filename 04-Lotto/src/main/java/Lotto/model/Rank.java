@@ -1,4 +1,4 @@
-package Lotto;
+package Lotto.model;
 
 import java.util.Arrays;
 

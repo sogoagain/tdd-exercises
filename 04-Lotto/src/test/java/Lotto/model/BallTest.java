@@ -1,5 +1,6 @@
-package Lotto;
+package Lotto.model;
 
+import Lotto.model.Ball;
 import org.junit.Test;
 
 import static org.assertj.core.api.Assertions.*;

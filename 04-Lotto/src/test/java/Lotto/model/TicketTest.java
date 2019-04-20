@@ -1,5 +1,7 @@
-package Lotto;
+package Lotto.model;
 
+import Lotto.model.Ball;
+import Lotto.model.Ticket;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -8,7 +10,7 @@ import static org.assertj.core.api.Assertions.*;
 import java.util.HashSet;
 import java.util.Set;
 
-public class BallsTest {
+public class TicketTest {
 
     private Set<Ball> ballSet = new HashSet<>();
 
@@ -18,7 +20,7 @@ public class BallsTest {
     }
 
     private void initBallSet(Set<Ball> ballSet) {
-        for (int i = 1; i <= Balls.SIZE; i++) {
+        for (int i = 1; i <= Ticket.SIZE; i++) {
             Ball ball = Ball.valueOf(i);
             ballSet.add(ball);
         }
@@ -30,7 +32,7 @@ public class BallsTest {
         Ball newBall = Ball.valueOf(maximum_value);
         ballSet.add(newBall);
 
-        Balls balls = new Balls(ballSet);
+        Ticket ticket = new Ticket(ballSet);
     }
 
     @Test
@@ -38,10 +40,10 @@ public class BallsTest {
         Set<Ball> otherBallSet = new HashSet<>();
         initBallSet(otherBallSet);
 
-        Balls balls = new Balls(ballSet);
-        Balls otherBalls = new Balls(otherBallSet);
+        Ticket ticket = new Ticket(ballSet);
+        Ticket otherTicket = new Ticket(otherBallSet);
 
-        boolean result = balls.equals(otherBalls);
+        boolean result = ticket.equals(otherTicket);
         assertThat(result).isEqualTo(true);
     }
 }

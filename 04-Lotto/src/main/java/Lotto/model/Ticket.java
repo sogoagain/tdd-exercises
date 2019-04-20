@@ -1,14 +1,14 @@
-package Lotto;
+package Lotto.model;
 import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 
-public class Balls {
+public class Ticket {
     public static final int SIZE = 6;
 
     private final Set<Ball> balls;
 
-    public Balls(Set<Ball> balls) {
+    public Ticket(Set<Ball> balls) {
         checkSize(balls);
         this.balls = balls;
     }
@@ -19,7 +19,7 @@ public class Balls {
         }
     }
 
-    public int match(Balls other) {
+    public int match(Ticket other) {
         Set<Ball> otherSet = new HashSet<>(other.balls);
         otherSet.retainAll(balls);
 
@@ -33,9 +33,9 @@ public class Balls {
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Balls)) return false;
-        Balls balls1 = (Balls) o;
-        return balls.equals(balls1.balls);
+        if (!(o instanceof Ticket)) return false;
+        Ticket ticket1 = (Ticket) o;
+        return balls.equals(ticket1.balls);
     }
 
     @Override
