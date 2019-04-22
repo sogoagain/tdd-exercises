@@ -13,6 +13,7 @@ public class RandomSimulationTest {
         randomSimulation.start();
     }
 
+    // 목 객체로 테스트
     @Test
     public void test_lessThan0Times() throws Exception {
         ConsoleView view = new ConsoleView();

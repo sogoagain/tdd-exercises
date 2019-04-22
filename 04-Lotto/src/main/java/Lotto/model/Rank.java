@@ -8,7 +8,7 @@ public enum Rank {
     , THIRD("3등", 5)
     , FOURTH("4등", 4)
     , FIFTH("5등", 3);
-
+    // TO-DO: 꽝 처리
     private String title;
     private int matchCount;
 

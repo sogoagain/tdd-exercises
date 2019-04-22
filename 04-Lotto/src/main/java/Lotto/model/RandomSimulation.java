@@ -10,6 +10,7 @@ public class RandomSimulation implements Simulation{
     private WinningTicket winningTicket;
 
     private int timesOfSimulation;
+    // TO-DO: 1급 컬렉션
     private Map<Rank, Integer> results;
 
     @Override
@@ -28,13 +29,14 @@ public class RandomSimulation implements Simulation{
             Ticket ticket = createRandomTicket();
             Rank rank = winningTicket.getRank(ticket);
 
+            // TO-DO: null 처리
             if (rank == null) {
                 continue;
             }
 
+            // TO-DO: results.computeIfPresent()
             if (!results.containsKey(rank)) {
                 results.put(rank, 0);
-                continue;
             }
 
             int count = results.get(rank);
