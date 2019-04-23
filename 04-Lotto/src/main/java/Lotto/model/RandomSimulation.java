@@ -29,19 +29,8 @@ public class RandomSimulation implements Simulation{
             Ticket ticket = createRandomTicket();
             Rank rank = winningTicket.getRank(ticket);
 
-            // TO-DO: null 처리
-            if (rank == null) {
-                continue;
-            }
-
-            // TO-DO: results.computeIfPresent()
-            if (!results.containsKey(rank)) {
-                results.put(rank, 0);
-            }
-
-            int count = results.get(rank);
-            results.put(rank, ++count);
-
+            results.putIfAbsent(rank, 0);
+            results.computeIfPresent(rank, (k, v) -> ++v);
             winningObserver.updateWinningStatus(ticket, rank);
         }
 
