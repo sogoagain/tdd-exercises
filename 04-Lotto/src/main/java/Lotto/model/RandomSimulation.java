@@ -6,35 +6,30 @@ import java.util.*;
 
 public class RandomSimulation implements Simulation{
 
-    private WinningObserver winningObserver;
-    private WinningTicket winningTicket;
-
     private int timesOfSimulation;
-    // TO-DO: 1급 컬렉션
-    private Map<Rank, Integer> results;
+    private WinningObserver winningObserver;
 
     @Override
     public void initialize(int timesOfSimulation) {
-        results = new TreeMap<>(Comparator.naturalOrder());
-
         this.timesOfSimulation = timesOfSimulation;
-        winningTicket = createRandomWinningTicket();
-
-        winningObserver.updateWinningTicket(winningTicket);
     }
 
     @Override
     public void start() {
+        Results results = new Results();
+
+        WinningTicket winningTicket = createRandomWinningTicket();
+        winningObserver.updateWinningTicket(winningTicket);
+
         for (int i = 0; i < timesOfSimulation; i++) {
             Ticket ticket = createRandomTicket();
             Rank rank = winningTicket.getRank(ticket);
 
-            results.putIfAbsent(rank, 0);
-            results.computeIfPresent(rank, (k, v) -> ++v);
+            results.put(rank);
             winningObserver.updateWinningStatus(ticket, rank);
         }
-
-        winningObserver.updateSimulationResults(results);
+        Map<Rank, Integer> statistics = results.getStatistics();
+        winningObserver.updateSimulationResults(statistics);
     }
 
     @Override
@@ -49,7 +44,6 @@ public class RandomSimulation implements Simulation{
 
     private Ticket createRandomTicket() {
         int ticketSize = Ticket.SIZE;
-
         return new Ticket(createBallSet(ticketSize));
     }
 

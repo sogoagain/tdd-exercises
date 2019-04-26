@@ -2,9 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="27dcb8c1-c4d2-4494-8ae0-a315998443bd" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Lotto/model/Results.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Lotto/model/ResultsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Lotto/model/WinningObserverMock.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Lotto/model/Ball.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lotto/model/Ball.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Lotto/model/RandomSimulation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lotto/model/RandomSimulation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Lotto/model/Rank.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Lotto/model/Rank.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Lotto/model/RandomSimulationTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Lotto/model/RandomSimulationTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -23,10 +27,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Lotto/model/BallTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Lotto/model/Rank.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-170">
-              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+            <state relative-caret-position="158">
+              <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Lotto/model/RandomSimulationTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="70">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -34,19 +47,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/Lotto/model/RandomSimulationTest.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="32">
-              <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Lotto/model/TicketTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="6">
+            <state relative-caret-position="64">
               <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -58,7 +62,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/Lotto/model/WinningTicketTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="160">
+            <state relative-caret-position="64">
               <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -68,44 +72,61 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Lotto/controller/SimulationController.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Lotto/model/WinningObserverMock.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
-              <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
+            <state relative-caret-position="250">
+              <caret line="26" column="46" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#319#320#0" expanded="true" />
+                <element signature="e#360#361#0" expanded="true" />
+                <element signature="e#442#443#0" expanded="true" />
+                <element signature="e#483#484#0" expanded="true" />
+                <element signature="e#588#589#0" expanded="true" />
+                <element signature="e#620#621#0" expanded="true" />
+                <element signature="e#718#719#0" expanded="true" />
+                <element signature="e#759#760#0" expanded="true" />
+                <element signature="e#799#800#0" expanded="true" />
+                <element signature="e#840#841#0" expanded="true" />
+                <element signature="e#880#881#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Lotto/model/Ball.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="636">
-              <caret line="61" column="20" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="20" />
-              <folding>
-                <element signature="e#1442#1443#0" expanded="true" />
-                <element signature="e#1475#1476#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Lotto/model/Rank.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="256">
-              <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Lotto/model/RandomSimulation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="229">
-              <caret line="31" column="40" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
+            <state relative-caret-position="207">
+              <caret line="54" column="40" selection-start-line="54" selection-start-column="40" selection-end-line="54" selection-end-column="40" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#323#324#0" expanded="true" />
+                <element signature="e#381#382#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Lotto/model/Results.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="11" selection-start-line="11" selection-end-line="11" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#436#437#0" expanded="true" />
+                <element signature="e#459#460#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Lotto/view/ConsoleView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="348">
+              <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -114,12 +135,14 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Lotto/view/WinningObserver.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/Lotto/model/ResultsTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="128">
-              <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+            <state relative-caret-position="-104">
+              <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#260#261#0" expanded="true" />
+                <element signature="e#298#299#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -128,8 +151,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Lotto/LottoMain.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            <state relative-caret-position="112">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -146,8 +169,8 @@
         <option value="Enum" />
         <option value="Python Script" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="Junit4 with AssertJ" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -156,8 +179,11 @@
       <find>Map</find>
       <find>cache</find>
       <find>Integer</find>
-      <find>value</find>
       <find>IntegerCache</find>
+      <find>results</find>
+      <find>value</find>
+      <find>winningTicket</find>
+      <find>RandomSimulation</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -191,7 +217,6 @@
         <option value="$PROJECT_DIR$/src/main/java/Lotto/controller/Simulation.java" />
         <option value="$PROJECT_DIR$/src/test/java/Lotto/controller/RandomSimulationTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Lotto/controller/RandomSimulation.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Lotto/model/Ball.java" />
         <option value="$PROJECT_DIR$/src/test/java/Lotto/model/WinningTicketTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Lotto/controller/Controller.java" />
         <option value="$PROJECT_DIR$/src/main/java/Lotto/Lotto.java" />
@@ -202,8 +227,12 @@
         <option value="$PROJECT_DIR$/src/main/java/Lotto/view/WinningObserver.java" />
         <option value="$PROJECT_DIR$/src/main/java/Lotto/view/ConsoleView.java" />
         <option value="$PROJECT_DIR$/src/test/java/Lotto/model/TicketTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/Lotto/model/RandomSimulationTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Lotto/model/Rank.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Lotto/model/Ball.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Lotto/model/WinningObserverMock.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Lotto/model/RandomSimulationTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Lotto/model/Results.java" />
+        <option value="$PROJECT_DIR$/src/test/java/Lotto/model/ResultsTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Lotto/model/RandomSimulation.java" />
       </list>
     </option>
@@ -311,7 +340,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556031393197" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1556292267979" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -322,6 +351,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="Lotto.model" />
       <recent name="Lotto.view" />
       <recent name="Lotto" />
     </key>
@@ -383,7 +413,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WinningTicketTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ResultsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="io.github.sogoagain.Lotto.test" />
       <extension name="coverage">
         <pattern>
@@ -392,13 +422,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Lotto.model" />
-      <option name="MAIN_CLASS_NAME" value="Lotto.model.WinningTicketTest" />
+      <option name="MAIN_CLASS_NAME" value="Lotto.model.ResultsTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WinningTicketTest.test_notWin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ResultsTest.test_modifyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="io.github.sogoagain.Lotto.test" />
       <extension name="coverage">
         <pattern>
@@ -407,8 +437,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="Lotto.model" />
-      <option name="MAIN_CLASS_NAME" value="Lotto.model.WinningTicketTest" />
-      <option name="METHOD_NAME" value="test_notWin" />
+      <option name="MAIN_CLASS_NAME" value="Lotto.model.ResultsTest" />
+      <option name="METHOD_NAME" value="test_modifyTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -417,10 +447,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.RandomSimulationTest" />
-        <item itemvalue="JUnit.RandomSimulationTest.test_lessThan0Times" />
         <item itemvalue="Application.LottoMain" />
-        <item itemvalue="JUnit.WinningTicketTest" />
-        <item itemvalue="JUnit.WinningTicketTest.test_notWin" />
+        <item itemvalue="JUnit.ResultsTest" />
+        <item itemvalue="JUnit.ResultsTest.test_modifyTest" />
+        <item itemvalue="JUnit.RandomSimulationTest.test_lessThan0Times" />
       </list>
     </recent_temporary>
   </component>
@@ -446,26 +476,12 @@
       <workItem from="1555821718029" duration="162000" />
       <workItem from="1555943952398" duration="28000" />
       <workItem from="1555944213563" duration="91000" />
-      <workItem from="1556030508802" duration="850000" />
+      <workItem from="1556030508802" duration="930000" />
+      <workItem from="1556287762293" duration="4063000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TicketTest - 2019.04.14 at 01h 43m 25s.xml">
-      <configuration name="TicketTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="BallTest_test_equals - 2019.04.14 at 15h 55m 11s.xml">
-      <configuration name="BallTest.test_equals" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TicketTest - 2019.04.14 at 16h 08m 23s.xml">
-      <configuration name="TicketTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TicketTest - 2019.04.14 at 16h 11m 12s.xml">
-      <configuration name="TicketTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="WinningTicketTest - 2019.04.20 at 22h 34m 06s.xml">
-      <configuration name="WinningTicketTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="WinningTicketTest_test_notWin - 2019.04.20 at 23h 50m 20s.xml">
       <configuration name="WinningTicketTest.test_notWin" configurationId="JUnit" />
     </history-entry>
@@ -481,15 +497,30 @@
     <history-entry file="RandomSimulationTest - 2019.04.23 at 23h 56m 18s.xml">
       <configuration name="RandomSimulationTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ResultsTest_test_modifyTest - 2019.04.26 at 23h 41m 59s.xml">
+      <configuration name="ResultsTest.test_modifyTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ResultsTest - 2019.04.26 at 23h 42m 31s.xml">
+      <configuration name="ResultsTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RandomSimulationTest - 2019.04.27 at 00h 14m 13s.xml">
+      <configuration name="RandomSimulationTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RandomSimulationTest - 2019.04.27 at 00h 15m 01s.xml">
+      <configuration name="RandomSimulationTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RandomSimulationTest - 2019.04.27 at 00h 15m 24s.xml">
+      <configuration name="RandomSimulationTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="29165000" />
+    <option name="totallyTimeSpent" value="33308000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="988" extended-state="6" />
+    <frame x="0" y="23" width="1920" height="988" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18849841" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19009584" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -499,7 +530,7 @@
       <window_info id="Learn" order="7" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.47433037" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.47433037" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -511,6 +542,7 @@
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32924107" />
       <window_info anchor="bottom" id="Database Changes" order="12" />
       <window_info anchor="bottom" id="Version Control" order="13" />
+      <window_info anchor="right" id="Key Promoter X" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -567,38 +599,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Lotto/model/Simulation.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/Lotto/model/BallTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Lotto/model/Ticket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-90">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Lotto/model/WinningTicket.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
-          <folding>
-            <element signature="e#1067#1068#0" expanded="true" />
-            <element signature="e#1117#1118#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Lotto/view/ConsoleView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="332">
-          <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+        <state relative-caret-position="64">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -615,39 +619,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Lotto/model/BallTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-170">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Lotto/model/TicketTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/Lotto/model/WinningTicketTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="160">
-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Lotto/controller/SimulationController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
+        <state relative-caret-position="174">
           <caret line="11" column="21" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -657,8 +631,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Lotto/model/Ball.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="636">
-          <caret line="61" column="20" selection-start-line="61" selection-start-column="20" selection-end-line="61" selection-end-column="20" />
+        <state relative-caret-position="224">
+          <caret line="55" column="33" selection-start-line="55" selection-start-column="28" selection-end-line="55" selection-end-column="33" />
           <folding>
             <element signature="e#1442#1443#0" expanded="true" />
             <element signature="e#1475#1476#0" expanded="true" />
@@ -666,37 +640,145 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Lotto/model/Rank.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Lotto/model/Simulation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+        <state relative-caret-position="144">
+          <caret line="9" column="24" selection-start-line="9" selection-start-column="24" selection-end-line="9" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Lotto/model/RandomSimulation.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Lotto/model/Ticket.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="229">
-          <caret line="31" column="40" selection-start-line="31" selection-start-column="40" selection-end-line="31" selection-end-column="40" />
+        <state relative-caret-position="-344">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Lotto/model/WinningTicket.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-40">
+          <caret line="25" column="4" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="4" />
+          <folding>
+            <element signature="e#1067#1068#0" expanded="true" />
+            <element signature="e#1117#1118#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Lotto/LottoMain.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        <state relative-caret-position="112">
+          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Lotto/model/Rank.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="158">
+          <caret line="16" column="26" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Lotto/view/ConsoleView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="348">
+          <caret line="27" column="4" selection-start-line="27" selection-start-column="4" selection-end-line="27" selection-end-column="4" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Lotto/model/TicketTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Lotto/model/WinningTicketTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Lotto/model/WinningObserverMock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="26" column="46" selection-start-line="26" selection-start-column="46" selection-end-line="26" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#319#320#0" expanded="true" />
+            <element signature="e#360#361#0" expanded="true" />
+            <element signature="e#442#443#0" expanded="true" />
+            <element signature="e#483#484#0" expanded="true" />
+            <element signature="e#588#589#0" expanded="true" />
+            <element signature="e#620#621#0" expanded="true" />
+            <element signature="e#718#719#0" expanded="true" />
+            <element signature="e#759#760#0" expanded="true" />
+            <element signature="e#799#800#0" expanded="true" />
+            <element signature="e#840#841#0" expanded="true" />
+            <element signature="e#880#881#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Lotto/model/Results.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#436#437#0" expanded="true" />
+            <element signature="e#459#460#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/Lotto/model/ResultsTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-104">
+          <caret line="11" column="27" selection-start-line="11" selection-start-column="27" selection-end-line="11" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#260#261#0" expanded="true" />
+            <element signature="e#298#299#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/Lotto/model/RandomSimulationTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32">
-          <caret line="2" column="29" selection-start-line="2" selection-start-column="29" selection-end-line="2" selection-end-column="29" />
+        <state relative-caret-position="70">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Lotto/model/RandomSimulation.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="54" column="40" selection-start-line="54" selection-start-column="40" selection-end-line="54" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#323#324#0" expanded="true" />
+            <element signature="e#381#382#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

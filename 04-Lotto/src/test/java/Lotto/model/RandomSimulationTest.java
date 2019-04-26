@@ -1,34 +1,29 @@
 package Lotto.model;
 
-import Lotto.view.ConsoleView;
 import org.junit.Test;
+
+import static org.assertj.core.api.Assertions.*;
 
 public class RandomSimulationTest {
 
+    private static final int TIMES_OF_SIMULATION = 1000;
     private RandomSimulation randomSimulation = new RandomSimulation();
 
     @Test (expected = NullPointerException.class)
     public void test_notRegisterObserver() throws Exception {
-        randomSimulation.initialize(1000);
+        randomSimulation.initialize(TIMES_OF_SIMULATION);
         randomSimulation.start();
     }
 
-    // 목 객체로 테스트
     @Test
     public void test_lessThan0Times() throws Exception {
-        ConsoleView view = new ConsoleView();
+        WinningObserverMock view = new WinningObserverMock();
         randomSimulation.registerObserver(view);
-
-        randomSimulation.initialize(-1);
+        randomSimulation.initialize(TIMES_OF_SIMULATION);
         randomSimulation.start();
-    }
 
-    @Test
-    public void test_simulateTest() throws Exception {
-        ConsoleView view = new ConsoleView();
-        randomSimulation.registerObserver(view);
-
-        randomSimulation.initialize(1000);
-        randomSimulation.start();
+        assertThat(view.getCountOfCallWinningTicket()).isEqualTo(1);
+        assertThat(view.getCountOfCallResult()).isEqualTo(1);
+        assertThat(view.getCountOfCallStatus()).isEqualTo(TIMES_OF_SIMULATION);
     }
 }
