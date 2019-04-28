@@ -1,3 +1,8 @@
+### IntelliJ IDEA ###
+.idea
+*.iml
+*.ipr
+
 # Created by https://www.gitignore.io/api/git,java,macos,maven,gradle,python,pycharm,intellij
 # Edit at https://www.gitignore.io/?templates=git,java,macos,maven,gradle,python,pycharm,intellij
 
