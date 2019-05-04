@@ -6,7 +6,7 @@ import Lotto.model.WinningTicket;
 
 import java.util.Map;
 
-public interface WinningObserver {
+public interface ViewObserver {
     void updateWinningTicket(WinningTicket winningTicket);
 
     void updateWinningStatus(Ticket ticket, Rank rank);

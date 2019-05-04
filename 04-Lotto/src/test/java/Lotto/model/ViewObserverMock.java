@@ -1,10 +1,10 @@
 package Lotto.model;
 
-import Lotto.view.WinningObserver;
+import Lotto.view.ViewObserver;
 
 import java.util.Map;
 
-public class WinningObserverMock implements WinningObserver {
+public class ViewObserverMock implements ViewObserver {
     private int countOfCallWinningTicket = 0;
     private int countOfCallStatus = 0;
     private int countOfCallResult = 0;

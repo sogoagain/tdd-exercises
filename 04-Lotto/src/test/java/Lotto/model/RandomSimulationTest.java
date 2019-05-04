@@ -12,15 +12,15 @@ public class RandomSimulationTest {
     @Test (expected = NullPointerException.class)
     public void test_notRegisterObserver() throws Exception {
         randomSimulation.initialize(TIMES_OF_SIMULATION);
-        randomSimulation.start();
+        randomSimulation.simulate();
     }
 
     @Test
     public void test_lessThan0Times() throws Exception {
-        WinningObserverMock view = new WinningObserverMock();
+        ViewObserverMock view = new ViewObserverMock();
         randomSimulation.registerObserver(view);
         randomSimulation.initialize(TIMES_OF_SIMULATION);
-        randomSimulation.start();
+        randomSimulation.simulate();
 
         assertThat(view.getCountOfCallWinningTicket()).isEqualTo(1);
         assertThat(view.getCountOfCallResult()).isEqualTo(1);

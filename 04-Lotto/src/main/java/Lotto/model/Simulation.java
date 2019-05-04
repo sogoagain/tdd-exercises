@@ -1,13 +1,11 @@
 package Lotto.model;
 
-import Lotto.view.WinningObserver;
+import Lotto.view.ViewObserver;
 
 public interface Simulation {
-    void initialize(int timesOfSimulation);
+    void simulate(int numberOfTimes);
 
-    void start();
+    void registerObserver(ViewObserver o);
 
-    void registerObserver(WinningObserver o);
-
-    void removeObserver(WinningObserver o);
+    void removeObserver(ViewObserver o);
 }

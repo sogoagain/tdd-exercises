@@ -8,6 +8,7 @@ public class Ball implements Comparable<Ball> {
     public static final int MAXIMUM_VALUE = 45;
 
     private int value;
+
     private Ball(int value) {
         this.value = value;
     }

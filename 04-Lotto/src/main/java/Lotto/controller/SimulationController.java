@@ -16,7 +16,6 @@ public class SimulationController implements Controller{
     @Override
     public void start() {
         int timesOfSimulation = view.inputTimesToSimulate();
-        model.initialize(timesOfSimulation);
-        model.start();
+        model.simulate(timesOfSimulation);
     }
 }

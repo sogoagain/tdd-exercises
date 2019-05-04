@@ -7,7 +7,7 @@ import Lotto.model.WinningTicket;
 import java.util.Map;
 import java.util.Scanner;
 
-public class ConsoleView implements WinningObserver {
+public class ConsoleView implements ViewObserver {
 
     public int inputTimesToSimulate() {
         System.out.print("시뮬레이션 횟수: ");
