@@ -8,15 +8,17 @@ public class RandomSimulation implements Simulation{
 
     private ViewObserver viewObserver;
 
+    // 단계를 나눠보자.
+    // 시물레이션 결과를 한번에 통
     @Override
     public void simulate(int numberOfTimes) {
         Results results = new Results();
 
-        WinningTicket winningTicket = TicketGenerator.createRandomWinningTicket();
+        WinningTicket winningTicket = RandomTicketGenerator.createRandomWinningTicket();
         viewObserver.updateWinningTicket(winningTicket);
 
         for (int i = 0; i < numberOfTimes; i++) {
-            Ticket ticket = TicketGenerator.createRandomTicket();
+            Ticket ticket = RandomTicketGenerator.createRandomTicket();
             Rank rank = winningTicket.getRank(ticket);
 
             results.put(rank);

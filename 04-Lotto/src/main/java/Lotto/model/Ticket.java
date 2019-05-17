@@ -3,6 +3,7 @@ import java.util.HashSet;
 import java.util.Objects;
 import java.util.Set;
 
+// 팩터리 메서드 추가 고려
 public class Ticket {
     public static final int SIZE = 6;
 
