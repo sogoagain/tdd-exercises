@@ -5,12 +5,12 @@ import static org.assertj.core.api.Assertions.*;
 
 public class CustomerTest {
 
-    private int INITIAL_FUNDS = 10_000;
+    private int INITIAL_MONEY = 10_000;
     private Customer customer;
 
     @Before
     public void initialize() {
-        customer = new Customer(INITIAL_FUNDS);
+        customer = new Customer(INITIAL_MONEY);
     }
 
     @Test
@@ -29,6 +29,6 @@ public class CustomerTest {
     public void 손님은_음료를_구매하면_잔액이_줄어든다() throws Exception {
         customer.buyBeverage("콜라", cokeVendingMachine);
         int change = customer.getMoney();
-        assertThat(change).isEqualTo(INITIAL_FUNDS - 1_000);
+        assertThat(change).isEqualTo(INITIAL_MONEY - 1_000);
     }
 }
