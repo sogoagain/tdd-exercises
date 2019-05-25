@@ -7,6 +7,7 @@ public class CustomerTest {
 
     private int INITIAL_MONEY = 10_000;
     private Customer customer;
+    private VendingMachine cokeVendingMachine;
 
     @Before
     public void initialize() {

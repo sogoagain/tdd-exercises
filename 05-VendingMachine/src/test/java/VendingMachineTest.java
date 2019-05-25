@@ -12,9 +12,4 @@ public class VendingMachineTest {
         vendingMachine = new VendingMachine();
     }
 
-
-    @Test
-    public void test_VendingMachineTest() throws Exception {
-
-    }
 }

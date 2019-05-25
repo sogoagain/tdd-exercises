@@ -9,11 +9,11 @@ public class BeverageTest {
         final String COKE_NAME = "콜라";
         final int COKE_PRICE = 1_000;
 
-        Beverage coke = new Beverage("COKE_NAME", COKE_PRICE);
+        Beverage coke = new Beverage(COKE_NAME, COKE_PRICE);
         String beverageName = coke.getName();
         int beverageCost = coke.getPrice();
 
         assertThat(beverageName).isEqualTo(COKE_NAME);
-        assertThat(beverageCost).isEqualTo(COKE_PRICE):
+        assertThat(beverageCost).isEqualTo(COKE_PRICE);
     }
 }
