@@ -38,31 +38,25 @@ public class BeverageContainerTest {
                 .Builder(COLA_NAME)
                 .price(COLA_PRICE)
                 .build();
-        beverageContainer.add(cola, 1);
-        Beverage colaByContainer = beverageContainer.get(COLA_NAME);
 
+        beverageContainer.add(cola, 1);
+
+        Beverage colaByContainer = beverageContainer.get(cola);
         assertThat(colaByContainer).isEqualTo(cola);
 
     }
 
     @Test
     public void 뽑을_음료의_수량이_부족하면_null이_나온다() {
-        Beverage cola1 = new Beverage
+        Beverage cola = new Beverage
                 .Builder(COLA_NAME)
                 .price(COLA_PRICE)
                 .build();
-        beverageContainer.add(cola1, 1);
 
-        Beverage cola2 = new Beverage
-                .Builder(COLA_NAME)
-                .price(COLA_PRICE)
-                .build();
-        beverageContainer.add(cola2, 1);
+        beverageContainer.add(cola, 1);
+        beverageContainer.decrease(cola);
 
-        beverageContainer.get(COLA_NAME);
-        beverageContainer.get(COLA_NAME);
-        Beverage colaByContainer = beverageContainer.get(COLA_NAME);
-
+        Beverage colaByContainer = beverageContainer.get(cola);
         assertThat(colaByContainer).isNull();
     }
 }

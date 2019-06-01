@@ -33,6 +33,10 @@ public class Beverage {
         this.price = builder.price;
     }
 
+    public int getPrice() {
+        return price;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;

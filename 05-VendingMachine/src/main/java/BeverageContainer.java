@@ -14,22 +14,25 @@ public class BeverageContainer {
         return container.containsKey(beverage);
     }
 
-    public Beverage get(String beverageName) {
-        Beverage beverage = new Beverage.Builder(beverageName).build();
-
+    public Beverage get(Beverage beverage) {
         if (!hasBeverage(beverage)) {
             return null;
         }
         Beverage beverageInMap = container.keySet().stream().filter(beverage::equals).findAny().orElse(null);
 
-        int amountInContainer = container.get(beverageInMap);
-        container.put(beverageInMap, amountInContainer - 1);
+        assert beverageInMap != null;
+        return new Beverage.Builder(beverageInMap).build();
+    }
+
+    public void decrease(Beverage beverage) {
+        if (!hasBeverage(beverage)) {
+            return;
+        }
+        int amountInContainer = container.get(beverage);
+        container.put(beverage, amountInContainer - 1);
 
         if (container.get(beverage) == 0) {
             container.remove(beverage);
         }
-
-        assert beverageInMap != null;
-        return new Beverage.Builder(beverageInMap).build();
     }
 }
