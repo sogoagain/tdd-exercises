@@ -1,5 +1,9 @@
 public class VendingMachine {
-    public VendingMachine(BeverageContainer beverageContainer) {
 
+    private int money;
+
+    public int putMoney(int money) {
+        this.money = money;
+        return this.money;
     }
 }

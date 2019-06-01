@@ -5,40 +5,32 @@ import java.util.*;
 
 import static org.assertj.core.api.Assertions.*;
 
+/*
+자판기 요구사항
+1. 입금 가능
+3. 상품 구매 가능
+*/
+
 public class VendingMachineTest {
 
     private VendingMachine vendingMachine;
 
     @Before
-    public void initialize() {
-        BeverageContainer beverageContainer = new BeverageContainer();
-        List<Beverage> beverages = makeBeverageDummy();
-
-        for (Beverage beverage :
-                beverages) {
-            beverageContainer.add(beverage, 10);
-        }
-
-        vendingMachine = new VendingMachine(beverageContainer);
+    public void init() {
+        vendingMachine = new VendingMachine();
     }
 
     @Test
-    public void 자판기는_음료를_
+    public void 자판기는_돈을_입금_받는다() {
+        final int INPUT_MONEY = 2_000;
+        int totalMoney = vendingMachine.putMoney(INPUT_MONEY);
+        assertThat(totalMoney).isEqualTo(INPUT_MONEY);
+    }
 
-    private List<Beverage> makeBeverageDummy() {
-        Map<String, Integer> beverageInfos = Map.of("콜라", 1_000, "사이다", 900, "환타", 700, "물", 500);
-        List<Beverage> beverages = new ArrayList<>();
+    @Test
+    public void 자판기는_음료수를_판매한다() {
+        final int INPUT_MONEY = 2_000;
 
-        for (Map.Entry<String, Integer> entry:
-                beverageInfos.entrySet()) {
-            String beverageName = entry.getKey();
-            int beveragePrice = entry.getValue();
-            Beverage beverage = new Beverage(beverageName, beveragePrice);
-
-            beverages.add(beverage);
-        }
-
-        return beverages;
     }
 
 }

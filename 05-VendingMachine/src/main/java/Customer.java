@@ -6,15 +6,4 @@ public class Customer {
         money = initial_money;
     }
 
-    public void buyBeverage(String beverageName, VendingMachine vendingMachine) {
-        return;
-    }
-
-    public int getMoney() {
-        return money;
-    }
-
-    public boolean hasBeverage(String 콜라) {
-        return false;
-    }
 }

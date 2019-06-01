@@ -2,20 +2,35 @@ import java.util.Objects;
 
 public class Beverage {
 
-    private String name;
-    private int price;
+    private final String name;
+    private final int price;
 
-    public Beverage(String name, int price) {
-        this.name = name;
-        this.price = price;
+    public static class Builder {
+        private String name;
+        private int price = 0;
+
+        public Builder(String name) {
+            this.name = name;
+        }
+
+        public Builder(Beverage beverage) {
+            this.name = beverage.name;
+            this.price = beverage.price;
+        }
+
+        public Builder price(int price) {
+            this.price = price;
+            return this;
+        }
+
+        public Beverage build() {
+            return new Beverage(this);
+        }
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public int getPrice() {
-        return price;
+    private Beverage(Builder builder) {
+        this.name = builder.name;
+        this.price = builder.price;
     }
 
     @Override
@@ -23,12 +38,11 @@ public class Beverage {
         if (this == o) return true;
         if (!(o instanceof Beverage)) return false;
         Beverage beverage = (Beverage) o;
-        return getPrice() == beverage.getPrice() &&
-                getName().equals(beverage.getName());
+        return name.equals(beverage.name);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(getName(), getPrice());
+        return Objects.hash(name);
     }
 }
