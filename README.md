@@ -21,10 +21,10 @@
 
 ## 연습 목록
 
-- [01-로또](#programmers)
-- [02-숫자야구](#hackerrank)
-- [03-블랙잭](#hackerrank)
-- [04-로또](#hackerrank)
-- [05-자판기](#hackerrank)
-- [06-문자열계산기](#hackerrank)
-- [07-자동차경주](#hackerrank)
+- [01-로또](https://github.com/sogoagain/TDD-exercises/tree/master/01-lotto)
+- [02-숫자야구](https://github.com/sogoagain/TDD-exercises/tree/master/02-NumberBaseball)
+- [03-블랙잭](https://github.com/sogoagain/TDD-exercises/tree/master/03-BlackJack)
+- [04-로또](https://github.com/sogoagain/TDD-exercises/tree/master/04-Lotto)
+- [05-자판기](https://github.com/sogoagain/TDD-exercises/tree/master/05-VendingMachine)
+- [06-문자열계산기](https://github.com/sogoagain/TDD-exercises/tree/master/06-Calculator)
+- [07-자동차경주](https://github.com/sogoagain/TDD-exercises/tree/master/07-CarRacing)
