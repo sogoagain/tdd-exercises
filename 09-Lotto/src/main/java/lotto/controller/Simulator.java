@@ -53,19 +53,14 @@ public class Simulator {
 
     public static WinningTicket drawWinningTicket(List<Integer> winningNumbers, int bonusNumber) {
         Ticket ticket = Ticket.generateTicket(winningNumbers.stream()
-                .map(Ball::valueOf)
-                .collect(Collectors.toSet()));
+                                                            .map(Ball::valueOf)
+                                                            .collect(Collectors.toSet()));
         Ball bonus = Ball.valueOf(bonusNumber);
 
         return new WinningTicket(ticket, bonus);
     }
 
     public static Statistics simulate(List<Ticket> tickets, WinningTicket winningTicket) {
-        Statistics statistics = new Statistics();
-        for (Ticket ticket : tickets) {
-            Rank rank = winningTicket.getRank(ticket);
-            statistics.put(rank);
-        }
-        return statistics;
+        return Statistics.createStatistics(tickets, winningTicket);
     }
 }

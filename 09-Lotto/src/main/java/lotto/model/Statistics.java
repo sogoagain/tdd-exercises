@@ -8,11 +8,21 @@ public class Statistics {
     private static final int COUNTING_UNIT = 1;
     private Map<Rank, Integer> results;
 
-    public Statistics() {
+    private Statistics() {
         results = new EnumMap<>(Rank.class);
         for (Rank rank : Rank.values()) {
             results.putIfAbsent(rank, INITIAL_COUNTING_VALUE);
         }
+    }
+
+    public static Statistics createStatistics(List<Ticket> tickets, WinningTicket winningTicket) {
+        Statistics statistics = new Statistics();
+        for (Ticket ticket : tickets) {
+            Rank rank = winningTicket.getRank(ticket);
+            statistics.put(rank);
+        }
+
+        return statistics;
     }
 
     public void put(Rank rank) {
