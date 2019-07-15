@@ -2,7 +2,7 @@
 
 - TDD를 이용한 개발 및 리팩토링을 실습하는 저장소입니다.
 - 객체 지향 설계와 실천을 위한 의식적인 연습 공간
-- 사용 테스트 라이브러리: JUnit4, AssertJ 
+- 사용 테스트 라이브러리: JUnit4, JUnit5, AssertJ 
 
 ---
 
@@ -21,10 +21,12 @@
 
 ## 연습 목록
 
-- [01-로또](https://github.com/sogoagain/TDD-exercises/tree/master/01-lotto)
-- [02-숫자야구](https://github.com/sogoagain/TDD-exercises/tree/master/02-NumberBaseball)
-- [03-블랙잭](https://github.com/sogoagain/TDD-exercises/tree/master/03-BlackJack)
-- [04-로또](https://github.com/sogoagain/TDD-exercises/tree/master/04-Lotto)
-- [05-자판기](https://github.com/sogoagain/TDD-exercises/tree/master/05-VendingMachine)
-- [06-문자열계산기](https://github.com/sogoagain/TDD-exercises/tree/master/06-Calculator)
-- [07-자동차경주](https://github.com/sogoagain/TDD-exercises/tree/master/07-CarRacing)
+- [01-로또](https://github.com/sogoagain/tdd-exercises/tree/master/01-lotto)
+- [02-숫자야구](https://github.com/sogoagain/tdd-exercises/tree/master/02-NumberBaseball)
+- [03-블랙잭](https://github.com/sogoagain/tdd-exercises/tree/master/03-BlackJack)
+- [04-로또](https://github.com/sogoagain/tdd-exercises/tree/master/04-Lotto)
+- [05-자판기](https://github.com/sogoagain/tdd-exercises/tree/master/05-VendingMachine)
+- [06-문자열계산기](https://github.com/sogoagain/tdd-exercises/tree/master/06-Calculator)
+- [07-자동차경주](https://github.com/sogoagain/tdd-exercises/tree/master/07-CarRacing)
+- [08-문자열계산기](https://github.com/sogoagain/tdd-exercises/tree/master/08-Calculator)
+- [09-로또](https://github.com/sogoagain/tdd-exercises/tree/master/09-Lotto)
