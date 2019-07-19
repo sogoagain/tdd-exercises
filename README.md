@@ -30,3 +30,5 @@
 - [07-자동차경주](https://github.com/sogoagain/tdd-exercises/tree/master/07-CarRacing)
 - [08-문자열계산기](https://github.com/sogoagain/tdd-exercises/tree/master/08-Calculator)
 - [09-로또](https://github.com/sogoagain/tdd-exercises/tree/master/09-Lotto)
+- [10-Java8 람다, 스트림, Optional](https://github.com/sogoagain/tdd-exercises/tree/master/10-java8)
+- [11-사다리게임](https://github.com/sogoagain/tdd-exercises/tree/master/11-Ladder)
