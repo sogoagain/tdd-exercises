@@ -1,3 +1,4 @@
+[![HitCount](http://hits.dwyl.io/sogoagain/tdd-exercises.svg)](http://hits.dwyl.io/sogoagain/tdd-exercises)
 # 테스트 주도 개발(TDD) 스터디 실습 저장소
 
 - TDD를 이용한 개발 및 리팩토링을 실습하는 저장소입니다.
